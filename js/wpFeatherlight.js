@@ -40,12 +40,16 @@
 			}
 
 			var href = parent.attr('href');
-			var isYT = (href.indexOf("youtube") > -1);
+			var isYT = ( href.indexOf("youtube") > -1 || href.indexOf("youtu.be") > -1 );
 			switch(isYT) {
 				case true:
 
-					parent.attr('href' , parent.attr('href').replace("watch" , "embed") );
-					parent.attr('href' , parent.attr('href').replace("?v=" , "/") );
+					href = href.replace("watch" , "embed") ;
+					href = href.replace("watch" , "embed") ;
+					href = href.replace("u.be/" , "ube.com/embed/");
+					href = href.replace("t=" , "start=");
+
+					parent.attr('href' , href);
 
 					parent.attr('data-featherlight', "iframe");
 					parent.attr('data-featherlight-iframe-width', $(window).width() * 0.80);

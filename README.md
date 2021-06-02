@@ -1,3 +1,10 @@
+# WP Featherlight Modded
+
+We've slighted modded the original WP Featherlight plugin to support images that are linked to YouTube videos.
+
+Original repo found here:
+https://github.com/cipherdevgroup/wp-featherlight/blob/develop/js/wpFeatherlight.js
+
 # WP Featherlight
 
 An ultra lightweight jQuery lightbox for WordPress images and galleries.

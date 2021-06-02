@@ -1,6 +1,6 @@
 # WP Featherlight Modded
 
-We've slighted modded the original WP Featherlight plugin to support images that are linked to YouTube videos.
+We've slightly modded the original WP Featherlight plugin to support images that are linked to YouTube videos.
 
 Note: This version contains unminified and uncombined JS assets.
 

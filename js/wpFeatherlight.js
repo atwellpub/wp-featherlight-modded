@@ -30,39 +30,7 @@
 	 * @return void
 	 */
 	function findImages() {
-
-		$body.find('article img').each(function() {
-
-			var parent = $(this).parent('a');
-
-			if ( !parent.length ) {
-				return;
-			}
-console.log('here');
-			var href = parent.attr('href');
-			var isYT = (href.indexOf("youtube") > -1);
-			switch(isYT) {
-				case true:
-
-					parent.attr('href' , parent.attr('href').replace("watch" , "embed") );
-					parent.attr('href' , parent.attr('href').replace("?v=" , "/") );
-
-					parent.attr('data-featherlight', "iframe");
-					parent.attr('data-featherlight-iframe-width', $(window).width() * 0.80);
-					parent.attr('data-featherlight-iframe-height',  $(window).height() * 0.80);
-					parent.attr('data-featherlight-iframe-frameborder', 0);
-					parent.attr('data-featherlight-iframe-allow', "autoplay; encrypted-media");
-					parent.attr('data-featherlight-iframe-allowfullscreen', true);
-					parent.attr('data-featherlight-iframe-scrolling', false);
-					parent.attr('data-featherlight-iframe-scroll', false);
-
-					break;
-				default:
-					parent.filter( testImages ).attr( 'data-featherlight', 'image' );
-					break;
-			}
-		});
-
+		$body.find( 'a[href]' ).filter( testImages ).attr( 'data-featherlight', 'image' );
 	}
 
 	/**

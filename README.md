@@ -2,8 +2,10 @@
 
 We've slighted modded the original WP Featherlight plugin to support images that are linked to YouTube videos.
 
+Note: This version contains unminified and uncombined JS assets.
+
 Original repo found here:
-https://github.com/cipherdevgroup/wp-featherlight/blob/develop/js/wpFeatherlight.js
+https://github.com/cipherdevgroup/wp-featherlight/
 
 # WP Featherlight
 

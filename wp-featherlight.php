@@ -3,7 +3,7 @@
  * Plugin Name:  WP Featherlight - Modded
  * Plugin URI:   https://wpfeatherlight.cipherdevelopment.com
  * Description:  An ultra lightweight jQuery lightbox for WordPress images and galleries that's been slightly modified for easier destination switching.
- * Version:      134.2
+ * Version:      134.3
  * Author:       Cipher, Hudson Atwell
  * Author URI:	 https://github.com/atwellpub/wp-featherlight-modded
  * License:      GPL-2.0+

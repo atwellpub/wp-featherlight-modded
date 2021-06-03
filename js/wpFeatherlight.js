@@ -45,7 +45,7 @@
 				case true:
 
 					href = href.replace("watch" , "embed") ;
-					href = href.replace("watch" , "embed") ;
+					href = href.replace("?v=" , "/") ;
 					href = href.replace("u.be/" , "ube.com/embed/");
 					href = href.replace("t=" , "start=");
 
